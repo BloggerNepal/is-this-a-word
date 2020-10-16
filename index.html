@@ -10,12 +10,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body style="display: flex; flex-flow: column; min-height: calc(100vh - 40px);">
     <h1>Is This a Word?</h1>
     <input id="inputToCheck" type="text"> <br>
     <button type="button" onclick="check()">Check</button>
     <h1 id="word"></h1>
     <h1 id="result"></h1>
+
+    <div style="flex: 2;">
+    </div>
+
+    <div>
+        <a href="use.html">How to use?</a> <br>
+        <br>
+        <a href="https://www.bloggernepal.com/">Blogger Nepal</a>
+    </div>
 
 </body>
 
@@ -45,11 +54,5 @@
         }
     }
 </script>
-
-<footer>
-    <a href="use.html">How to use?</a> <br>
-    <br>
-    <a href="https://www.bloggernepal.com/">Blogger Nepal</a>
-</footer>
 
 </html>

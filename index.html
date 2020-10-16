@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png">
+    <title>Is This a Word? | Blogger Nepal</title>
+    <script src="words.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Is This a Word?</h1>
+    <input id="inputToCheck" type="text"> <br>
+    <button type="button" onclick="check()">Check</button>
+    <h1 id="word"></h1>
+    <h1 id="result"></h1>
+
+</body>
+
+<script>
+
+    wordEdit = document.getElementById("inputToCheck")
+
+    wordView = document.getElementById("word");
+    resultView = document.getElementById("result");
+
+
+    function check() {
+        resultView.innerText = ""
+        resultView.innerText = ""
+
+        let word = wordEdit.value;
+
+        console.log(word);
+
+        let response = isThisAWord(word);
+
+        wordView.innerText = word;
+        if (response) {
+            resultView.innerText = "is a Word. :)"
+        } else {
+            resultView.innerText = "is not a Word. :("
+        }
+    }
+</script>
+
+<footer>
+    <a href="use.html">How to use?</a> <br>
+    <br>
+    <a href="https://www.bloggernepal.com/">Blogger Nepal</a>
+</footer>
+
+</html>
